@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:paddingTop="20dp"
+    android:paddingRight="10dp">
+    <EditText 
+        android:id="@+id/dbName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="8dp"
+        android:focusable="false"
+        android:background="@drawable/quan"
+        android:hint="@string/db_name"
+        android:text="@string/test"/>  
+	<TextView 
+	    android:id="@+id/tableName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dbName"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#F54"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="@string/table_name"/>
+	<ListView
+	    android:id="@+id/nameList"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@+id/tableName" >
+	</ListView>
+
+</RelativeLayout>

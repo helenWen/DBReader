@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Read DB</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Global Viariable -->
+    <string name="version">1.0</string>
+    <string name="done">Done</string>
+    <string name="read">Read</string>
+    <string name="test">Test Text</string>
+
+    <!-- Login Page -->
+    <string name="login_title">Read DB (v1.0)</string>
+    <string name="db_name">DB Name</string>
+
+    <!-- Main Page -->
+    <string name="title_tip">Table_Name(Data length)</string>
+    <string name="table_name">Table Name: </string>
+    <string name="column_count">Column Count: &#160; </string>
+    <string name="row_count">Row Count: &#160; </string>
+    <string name="less_than">&lt;</string>
+
+</resources>

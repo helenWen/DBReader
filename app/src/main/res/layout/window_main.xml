@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:focusable="true"
+	android:focusableInTouchMode="true">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+		android:paddingTop="20dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/menuBtn"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+			android:background="@drawable/bg_btn"
+			android:textSize="24dp"
+			android:textColor="@color/colorPrimaryDark"
+            android:text="@string/less_than"/>
+		<RelativeLayout
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:paddingTop="10dp"
+			android:layout_weight="1">
+			<TextView
+				android:id="@+id/title"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:textColor="@color/colorPrimaryDark"
+				android:textStyle="bold"
+				android:textSize="20sp"/>
+			<TextView
+				android:id="@+id/info"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textColor="@color/colorPrimaryDark"
+				android:layout_alignParentBottom="true"
+				android:paddingBottom="10dp"
+				android:paddingLeft="10dp"/>
+		</RelativeLayout>
+		<TextView
+			android:layout_width="50dp"
+			android:layout_height="match_parent"
+			android:background="@drawable/bg_btn"
+			android:textSize="24dp"
+			android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="vertical">
+	       	<GridView 
+	           	android:id="@+id/gridView"
+	           	android:layout_width="match_parent"
+	           	android:layout_height="wrap_content"
+	           	android:numColumns="8"
+	           	android:verticalSpacing="5dp"
+	           	android:horizontalSpacing="2dp"
+	           	android:orientation="vertical"/>
+       	</LinearLayout>
+        
+        <ListView 
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        
+    </LinearLayout>
+
+</LinearLayout>
